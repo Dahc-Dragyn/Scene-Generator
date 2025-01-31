@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Scene Image Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <h1>Book Scene Image Generator</h1>
+        <div class="input-section">
+            <label for="scene-input">Enter Book Scene Description:</label>
+            <textarea id="scene-input" rows="4"></textarea>
+            <button id="generate-prompt-button" class="btn">Generate Prompt</button>
+            <span id="char-limit-warning" style="color: red; margin-left: 10px;">Max Characters: 4000</span>
+            <div id="prompt-loading" class="loader">Loading...</div>
+        </div>
+        <div class="output-section">
+            <label for="prompt-textarea">Generated Prompt:</label>
+            <textarea id="prompt-textarea" rows="4"></textarea>
+            <button id="generate-image-button" class="btn">Generate Image</button>
+            <div id="image-loading" class="loader">Loading...</div>
+        </div>
+        <div class="image-section">
+            <h2>Generated Image:</h2>
+            <img id="image-display" alt="Image Incoming" />
+        </div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
