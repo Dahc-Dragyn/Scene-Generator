@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: pink;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #d14;
+}
+
+textarea {
+    width: 90%;
+    margin: 10px 0;
+    padding: 9px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #d14;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: #b0123e;
+}
+
+.image-section {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+.loader {
+    display: none;
+    margin-top: 10px;
+    color: #d14;
+}
+
+/* Optional: Add animation for a more dynamic loading effect */
+.loader::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 3px solid #d14;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+    margin-left: 5px;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
